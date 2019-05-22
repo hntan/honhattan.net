@@ -1,3 +1,44 @@
-baseURL = "http://example.org/"
+baseURL = "http://honhattan.net/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Tan Ho"
+theme = "minimo"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+author = "authors"
+
+[params.sidebar]
+enable = true
+
+[params.widgets]
+#header = ["breadcrumbs"]
+homepage = ["recent_posts"]
+sidebar = ["about","taxonomy_cloud"]
+footer = ["social_menu"]
+
+[params.info]
+description = "Just another blog"
+
+[params.settings]
+hideMainMenu = false
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = ["css/custom.css"]
+
+[params.social]
+email = "honhattan90@gmail.com"
+github = "hntan"
+linkedin = "honhattan"
+twitter = "nottanho"
+
+
+[menu]
+
+  [[menu.main]]
+    identifier = "flutter"
+    name = "Flutter"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/categories/flutter/"
+    weight = -110
