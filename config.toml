@@ -18,7 +18,7 @@ sidebar = ["about","taxonomy_cloud"]
 footer = ["social_menu"]
 
 [params.info]
-description = "Just another blog"
+description = "A place that i could write to learn"
 
 [params.settings]
 hideMainMenu = false
@@ -37,8 +37,8 @@ twitter = "nottanho"
 [menu]
 
   [[menu.main]]
-    identifier = "flutter"
-    name = "Flutter"
+    identifier = "home"
+    name = "Home"
     pre = "<i class='fa fa-heart'></i>"
-    url = "/categories/flutter/"
+    url = "/"
     weight = -110
