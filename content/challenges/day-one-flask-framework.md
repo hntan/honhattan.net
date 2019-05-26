@@ -2,20 +2,21 @@
 title: "Day One - Flask Framework"
 date: 2019-05-25T20:08:43+07:00
 draft: true
-tags: ["30-Day Challenges", "python"]
+tags: ["30-day", "python"]
 ---
 
 Create a new environment for our example.
 
-```
+{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
 conda create -n myflask python=3.7.3 flask
-```
+{{< / highlight >}}
+
 
 We create an envionment with flask package and specified python version 3.7.3. If version is not specified, newest version is downloaded.
 
 Below is what the output will look like on my terminal.
 
-```bash
+{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
 (base) tan@tan-pc:~/Workspace/py/my-flask-app$ conda create -n myflask python=3.7.3 flask
 Collecting package metadata: done
 Solving environment: done
@@ -70,23 +71,26 @@ Executing transaction: done
 #
 #     $ conda deactivate
 
-```
+{{< / highlight >}}
+
 
 Let's start our new created environment.
 
-```bash
+{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
 (base) tan@tan-pc:~/Workspace/py/my-flask-app$ conda activate myflask
 (myflask) tan@tan-pc:~/Workspace/py/my-flask-app$
-```
+{{< / highlight >}}
 
 Now, we're ready to create our flask application.
 
-```
+{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+
 (myflask) tan@tan-pc:~/Workspace/py/my-flask-app$ vim main.py
-```
+
+{{< / highlight >}}
 
 
-```python
+{{< highlight python "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
 from flask import Flask, jsonify
 
 app = Flask(__name__)
@@ -99,14 +103,16 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=10000)
-```
+
+{{< / highlight >}}
 
 The flask object implements a WSGI application. Once it is created it will acts as the central registry for the view functions, the URL rules, template configuration and much more.
 
 
 Let's run the application.
 
-```bash
+{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+
 (myflask) tan@tan-pc:~/Workspace/py/my-flask-app$ python main.py
  * Serving Flask app "main" (lazy loading)
  * Environment: production
@@ -118,13 +124,15 @@ Let's run the application.
  * Debugger is active!
  * Debugger PIN: 236-601-929
 
-```
+{{< / highlight >}}
+
 
 If you see the output like below, congratulation because the application is run successfully!
 
-```
+{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+
 (flaskr) tan@tan-pc:~/Workspace/py$ curl localhost:10000
 {
   "message": "OK"
 }
-```
+{{< / highlight >}}
