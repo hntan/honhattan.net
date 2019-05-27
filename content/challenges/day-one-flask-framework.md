@@ -7,7 +7,7 @@ tags: ["30-day", "python"]
 
 Create a new environment for our example.
 
-{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+{{< highlight bash >}}
 conda create -n myflask python=3.7.3 flask
 {{< / highlight >}}
 
@@ -16,7 +16,7 @@ We create an envionment with flask package and specified python version 3.7.3. I
 
 Below is what the output will look like on my terminal.
 
-{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+{{< highlight bash >}}
 (base) tan@tan-pc:~/Workspace/py/my-flask-app$ conda create -n myflask python=3.7.3 flask
 Collecting package metadata: done
 Solving environment: done
@@ -76,21 +76,21 @@ Executing transaction: done
 
 Let's start our new created environment.
 
-{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+{{< highlight bash >}}
 (base) tan@tan-pc:~/Workspace/py/my-flask-app$ conda activate myflask
 (myflask) tan@tan-pc:~/Workspace/py/my-flask-app$
 {{< / highlight >}}
 
 Now, we're ready to create our flask application.
 
-{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+{{< highlight bash >}}
 
 (myflask) tan@tan-pc:~/Workspace/py/my-flask-app$ vim main.py
 
 {{< / highlight >}}
 
 
-{{< highlight python "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+{{< highlight python >}}
 from flask import Flask, jsonify
 
 app = Flask(__name__)
@@ -111,7 +111,7 @@ The flask object implements a WSGI application. Once it is created it will acts 
 
 Let's run the application.
 
-{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+{{< highlight bash >}}
 
 (myflask) tan@tan-pc:~/Workspace/py/my-flask-app$ python main.py
  * Serving Flask app "main" (lazy loading)
@@ -129,7 +129,7 @@ Let's run the application.
 
 If you see the output like below, congratulation because the application is run successfully!
 
-{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+{{< highlight bash >}}
 
 (flaskr) tan@tan-pc:~/Workspace/py$ curl localhost:10000
 {

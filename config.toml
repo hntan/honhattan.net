@@ -18,7 +18,7 @@ sidebar = ["about","taxonomy_cloud"]
 footer = ["social_menu"]
 
 [params.info]
-description = "A place that i could write to learn"
+description = "A personal blog"
 
 [params.settings]
 hideMainMenu = false

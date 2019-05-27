@@ -1,3 +1,3 @@
-> Minimalism is not a lack of something. It’s simply the perfect amount of something. 
+> Any fool can know. The point is to understand.
 >
-> -- <cite>Nicholas Burroughs</cite>
+> -- <cite>Albert Einstein</cite>
