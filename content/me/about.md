@@ -1,7 +1,6 @@
 ---
 title: "About"
 date: 2019-05-05T17:38:59+07:00
-draft: true
 type: "me"
 menu: "main"
 layout: "hire"

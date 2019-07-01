@@ -1,15 +1,15 @@
 ---
-title: "Day Three - Learning Go"
+title: "Learning Go"
 date: 2019-05-27T20:09:41+07:00
-draft: true
 ---
 
+<!--
 This is the day three of 30-Day Challenges in learning new technoloy everyday.
 
 The title for today is Learning [Go][go-homepage]. To be honest I tried to write some line of codes in Go before but my understanding about the language is discreted. So I hope after this day, I will achieve my studing goal in a more systematic way!
 
-
 ## A brief history about Go.
+-->
 
 Go is statically typed, complied programming language designed at Google by Robert Griesemer (V8 engine, Java Hotspt VM), Rob Pike (Unix Team, UTF-8) and Ken Tompson (Unix).
 

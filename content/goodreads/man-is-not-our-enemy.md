@@ -1,7 +1,6 @@
 ---
 title: "Man Is Not Our Enemy"
 date: 2019-05-22T22:19:02+07:00
-draft: true
 tags: ["goodreads", "plumvillage"]
 ---
 

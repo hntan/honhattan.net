@@ -1,8 +1,7 @@
 ---
-title: "Day Two - Java Daemon Thread"
+title: "Java Daemon Thread"
 date: 2019-05-26T17:51:31+07:00
-draft: true
-tags: ["30-day", "java", "threading", "concurrency"]
+tags: ["java", "threading", "concurrency"]
 ---
 
 

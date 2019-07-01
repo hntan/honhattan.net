@@ -1,8 +1,7 @@
 ---
-title: "Day One - Flask Framework"
+title: "Flask Framework"
 date: 2019-05-25T20:08:43+07:00
-draft: true
-tags: ["30-day", "python"]
+tags: ["python"]
 ---
 
 Create a new environment for our example.
