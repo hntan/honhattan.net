@@ -1,44 +1,26 @@
 baseURL = "http://honhattan.net/"
 languageCode = "en-us"
 title = "Tan Ho"
-theme = "minimo"
+theme = "hugo-sustain"
 
-[taxonomies]
-tag = "tags"
-category = "categories"
-author = "authors"
+[params]
+  avatar = "profile.png"
+  author = "Tan Ho"
+  description = "Ahihi"
+  custom_css = ["css/custom.css"]
+  custom_js  = []
 
-[params.sidebar]
-enable = true
+[[menu.main]]
+  name = "blog"
+  url = "/blog/"
+  excludetypes = ["page", "me"]
 
-[params.widgets]
-#header = ["breadcrumbs"]
-homepage = ["recent_posts"]
-sidebar = ["about","taxonomy_cloud"]
-footer = ["social_menu"]
-
-[params.info]
-description = "A personal blog"
-
-[params.settings]
-hideMainMenu = false
-
-[params.assets]
-favicon = "favicon.ico"
-customCSS = ["css/custom.css"]
-
+[[menu.main]]
+  name = "Resume"
+  url = "/me/cv"
+  
 [params.social]
-email = "honhattan90@gmail.com"
-github = "hntan"
-linkedin = "honhattan"
-twitter = "nottanho"
-
-
-[menu]
-
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/"
-    weight = -110
+  Github        = "hntan"
+  Email         = "honhattan90@gmail.com"
+  Twitter       = "nottanho"
+  LinkedIn      = "honhattan"

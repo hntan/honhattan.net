@@ -1,3 +1,13 @@
-.main-menu+.header-widgets {
-    margin-top: 3em;
+html, body {
+    border-top: 0px !important;
+}
+
+.img-circle {
+   width: 190px;
+   height: 190px;
+}
+
+.img-circle-small {
+   width: 100px;
+   height: 100px;
 }

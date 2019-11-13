@@ -1,0 +1,39 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                 <section id="about">
+                    <div class="container">
+                    <div class="avatar">
+                      <img class="img-circle-small" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
+                    </div>
+                    <h3><strong>{{ .Site.Params.author }}</strong></h3>
+                    <p>Email: honhattan90@gmail.com</p>
+                    </div>
+                  </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="blogpost">
+                  {{ .Content }}
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
