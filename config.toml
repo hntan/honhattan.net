@@ -1,26 +1,4 @@
 baseURL = "http://honhattan.net/"
 languageCode = "en-us"
 title = "Tan Ho"
-theme = "hugo-sustain"
-
-[params]
-  avatar = "profile.png"
-  author = "Tan Ho"
-  description = "Ahihi"
-  custom_css = ["css/custom.css"]
-  custom_js  = []
-
-[[menu.main]]
-  name = "blog"
-  url = "/blog/"
-  excludetypes = ["page", "me"]
-
-[[menu.main]]
-  name = "Resume"
-  url = "/me/cv"
-  
-[params.social]
-  Github        = "hntan"
-  Email         = "honhattan90@gmail.com"
-  Twitter       = "nottanho"
-  LinkedIn      = "honhattan"
+theme = "cactus"

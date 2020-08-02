@@ -5,6 +5,6 @@
 	path = public
 	url = git@github.com:hntan/hntan.github.io.git
 	branch = master
-[submodule "themes/hugo-sustain"]
-	path = themes/hugo-sustain
-	url = git@github.com:nurlansu/hugo-sustain.git
+[submodule "themes/cactus"]
+	path = themes/cactus
+	url = git@github.com:monkeyWzr/hugo-theme-cactus.git
