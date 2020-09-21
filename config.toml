@@ -1,4 +1,49 @@
 baseURL = "http://honhattan.net/"
 languageCode = "en-us"
 title = "Tan Ho"
-theme = "cactus"
+theme = "anatole"
+
+[params]
+title = "I'm Tan Ho"
+author = "Tan Ho"
+description = "A java software engineer."
+profilePicture = "images/profile.jpg"
+keywords = ""
+favicon = "favicons/"
+customCss = []
+customJs = []
+mainSections = ["post"]
+images = []
+
+## Social links
+[[params.socialIcons]]
+icon = "fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/honhattan/"
+
+[[params.socialIcons]]
+icon = "fa-envelope"
+title = "e-mail"
+url = "mailto:honhattan90@gmail.com"
+
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
