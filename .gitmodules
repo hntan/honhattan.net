@@ -1,13 +1,7 @@
-[submodule "themes/minimo"]
-	path = themes/minimo
-	url = https://github.com/MunifTanjim/minimo
 [submodule "public"]
 	path = public
 	url = git@github.com:hntan/hntan.github.io.git
 	branch = master
-[submodule "themes/cactus"]
-	path = themes/cactus
-	url = git@github.com:monkeyWzr/hugo-theme-cactus.git
 [submodule "themes/anatole"]
 	path = themes/anatole
-	url = https://github.com/lxndrblz/anatole.git
+	url = git@github.com:lxndrblz/anatole.git

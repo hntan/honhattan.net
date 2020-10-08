@@ -1,4 +1,6 @@
-baseURL = "http://honhattan.net/"
+baseURL = "/"
+relativeurls = true
+
 languageCode = "en-us"
 title = "Tan Ho"
 theme = "anatole"

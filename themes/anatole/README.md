@@ -26,6 +26,7 @@ Anatole's aims to be minimalistic and sleek, but still brings some great functio
 - Custom JavaScript (optional)
 - Medium like zoom for images
 - Compliant to strict CSP
+- Syntax highlighting
 - Uses Hugo pipes to process assets
 
 ## Preview the exampleSite
@@ -84,6 +85,15 @@ Non-content entries can be added right from the `config.toml` file.
   identifier = "about"
   url = "/about/"
 ```
+### Prefer dark theme
+You can easily enable the dark mode from the `config.toml` all you have to do is to set the parameter `displayMode` to `dark`. If you dont specify any displayMode, then the light version will be loaded.
+
+Please also note that returning visitors will see the theme that was last displayed to them on your site. If your user has his system configured to dark mode, then this will also take presendence over the displayMode set in the `config.toml`.
+```toml
+[params]
+displayMode = "dark"
+``` 
+
 ### Multilingual support
 Anatole supports multilingual page setups. All you need to do is to add the languages to your 'config.toml'. For each Language you can set the custom options like title or description. It's important to include a `LanguageName`, as it will be displayed in the main menu.  
 ```toml
@@ -98,6 +108,14 @@ Anatole supports multilingual page setups. All you need to do is to add the lang
   description = "Ich bin Jane"
   weight = 2
   LanguageName = "DE"
+```
+There are two ways of translating your content either by adding a suffix in the filename eg. `mypost.de.md` or by setting a contentDir (a certain directory) for each language. [Link to the Hugo documentation](https://gohugo.io/content-management/multilingual/). If you want to use the option with the `contentDir`, you will have to add the `contentDir` parameter for each language:
+```toml
+[languages]
+  [languages.en]
+    contentDir = "content/english"
+    languageName = "EN"
+    weight = 1
 ```
 To make sure your menu is linking to the correct localized content, make sure that you customize the menu items to inlude the language prefix. Your menu might look like the following:
 ```toml
@@ -134,6 +152,13 @@ To use Google Analytics, a valid tracking code has to be added. If you don't wan
 ```toml
 googleAnalytics = "UA-123-45"
 ```
+
+### Google Site Verification
+To use Google Site Verification, add the following line to the `[params]`:
+```toml
+googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+```
+Replace the hash with the one Google provided you.
 
 ### Beautiful math functions
 ```toml
@@ -237,6 +262,25 @@ User-agent: *
 ```
 If certain sites shoud be excluded from being accessed, you might want to setup a custom robots.txt file within your `static` folder of your site. 
 
+### Syntax highlighting
+This theme has support for either Hugo's lightning fast Chroma code highlighting. See the [Hugo docs](https://gohugo.io/content-management/syntax-highlighting/) for more information.
+
+To enable Chroma, add the following to your site parameters:
+```
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+```
+Then, you can generate a different style by running:
+```
+hugo gen chromastyles --style=monokailight > assets/css/syntax.css
+```
+If you get any errors, make sure the `assets/css/` directory exists within your sites root folder.
+Include the newly generated `syntax.css` like a standard custom css script:
+```
+[params]
+customCss = ["css/syntax.css"]
+```
+
 ## License
 
 Anatole is licensed under the [MIT license](https://github.com/lxndrblz/anatole/blob/master/LICENSE).
@@ -249,5 +293,3 @@ This theme is maintained by its author [Alexander Bilz](https://github.com/lxndr
 
 * Go to [Cai Cai](https://github.com/hi-caicai), for the great Anatole Farbox theme that formed the foundation for this theme.
 * Go to [Kareya Saleh](https://unsplash.com/photos/tLKOj6cNwe0) for providing the profile picture in the exampleSite.
-
-
