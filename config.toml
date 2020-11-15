@@ -3,54 +3,33 @@ relativeurls = true
 
 languageCode = "en-us"
 title = "Tan Ho"
-theme = "anatole"
+theme = "avicenna"
+googleAnalytics = "UA-1234-6"
+timeout=3000
 
 [params]
-title = "I'm Tan Ho"
-author = "Tan Ho"
-description = "A java software engineer."
-profilePicture = "images/profile.jpg"
-keywords = ""
-favicon = "favicons/"
-customCss = []
-customJs = []
-mainSections = ["post"]
-images = []
+  subtitle= "Senior Java Software Engineer"
+  interests="Building websites, mobile apps "
+  cv_name= "cv.pdf"
 
-## Social links
-[[params.socialIcons]]
-icon = "fa-linkedin"
-title = "Linkedin"
-url = "https://www.linkedin.com/in/honhattan/"
+[[params.affilation]]
+  name = "Localize Direct Vietnam"
+  position = "Senior Java Developer"
+  contact = "th@localizedirect.com"
 
-[[params.socialIcons]]
-icon = "fa-envelope"
-title = "e-mail"
-url = "mailto:honhattan90@gmail.com"
+[[params.social]]
+  name = "Twitter"
+  icon = "twitter"
+  url = "https://twitter.com/nottanho"
 
+[[params.social]]
+  name = "LinkedIn"
+  icon = "linkedin"
+  url = "https://linkedin.com/in/honhattan/"
 
-[menu]
-
-  [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
-
-  [[menu.main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/post/"
-
-  [[menu.main]]
-  name = "About"
-  weight = 300
-  identifier = "about"
-  url = "/about/"
-
-  [[menu.main]]
-  name = "Projects"
-  weight = 250
-  identifier = "project"
-  url = "/app/"
+[[params.apps]]
+	[[params.apps.app]]
+		name = "Easy Keep"
+		description  = "Keep your everything."
+		play_store_link = "https://play.google.com/store/apps/details?id=net.honhattan.easykeep"
+		app_store_link = ""

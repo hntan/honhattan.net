@@ -1,0 +1,35 @@
+<div class="introduction">
+	{{ with .Site.Params.apps }}
+	<h4>Apps</h4>
+	<ul>
+		{{- range $index, $apps_map := $.Site.Params.apps -}}
+
+		{{ range $elem_index, $app := $apps_map.app }}
+		<li>
+			<p>{{ $app.name }}</p>
+
+			{{ if or ($app.play_store_link) ($app.app_store_link) }}
+			<span class="code_blog">
+				{{ with $app.play_store_link }}
+				[<a href="{{ . }}">Google Play</a>]
+				{{ end }}
+
+				{{ with $app.app_store_link }}
+				[<a href="{{ . }}">App Store</a>]
+				{{ end }}
+			</span>
+			{{ end }}
+
+			{{ with $app.description }}
+			<span class="project_description">
+				{{ . | markdownify}}
+			</span>
+			{{ end }}
+
+		</li>
+		{{ end }}
+
+		{{- end -}}
+	</ul>
+	{{ end }}
+</div>
