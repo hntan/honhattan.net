@@ -49,3 +49,8 @@ url = "mailto:honhattan90@gmail.com"
   identifier = "about"
   url = "/about/"
 
+  [[menu.main]]
+  name = "Projects"
+  weight = 250
+  identifier = "project"
+  url = "/app/"
