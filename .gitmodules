@@ -5,6 +5,3 @@
 [submodule "themes/anatole"]
 	path = themes/anatole
 	url = git@github.com:lxndrblz/anatole.git
-[submodule "themes/avicenna"]
-    path = themes/avicenna
-    url = git@github.com:hadisinaee/avicenna.git
