@@ -32,4 +32,4 @@ timeout=3000
 		name = "Easy Keep"
 		description  = "Keep your everything."
 		play_store_link = "https://play.google.com/store/apps/details?id=net.honhattan.easykeep"
-		app_store_link = ""
+		app_store_link = "https://testflight.apple.com/join/7RYLBfys"
